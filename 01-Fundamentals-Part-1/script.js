@@ -3,6 +3,8 @@
 let js = 'amazing';
 // console.log(40 + 8 + 23 - 10);
 
+////////////////////////////////////
+// Values and Variables
 console.log('Jonas');
 console.log(23);
 
@@ -25,6 +27,8 @@ let myCurrentJob = 'Teacher';
 
 console.log(myFirstJob);
 
+////////////////////////////////////
+// Data Types
 
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
@@ -46,6 +50,9 @@ console.log(typeof year);
 
 console.log(typeof null);
 
+////////////////////////////////////
+// let, const and var
+
 let age = 30;
 age = 31;
 
@@ -60,6 +67,8 @@ job = 'teacher';
 lastName = 'Grazys';
 console.log(lastName);
 
+////////////////////////////////////
+// Basic Operators
 // Math operators
 const now = 2037;
 const ageSaulius = now - 1991;
@@ -90,7 +99,8 @@ const isFullAge = ageMarija >= 18;
 
 console.log(now - 1991 > now - 2018);
 
-
+////////////////////////////////////
+// Operator Precedence
 const now = 2037;
 const ageSaulius = now - 1991;
 const ageMarija = now - 2018;
@@ -104,6 +114,9 @@ console.log(x, y);
 const averageAge = (ageSaulius + ageMarija) / 2;
 console.log(ageSaulius, ageMarija, averageAge);
 */
+
+////////////////////////////////////
+// Strings and Template Literals
 
 /* const firstName = 'Tauras';
 const job = 'student';
@@ -123,6 +136,9 @@ lines');
 console.log(`String with
 multiple
 lines`);
+
+////////////////////////////////////
+// Taking Decisions: if / else Statements
 
 const age = 15;
 
@@ -145,7 +161,11 @@ if (birthYear <= 2000) {
 console.log(century);
 */
 
+
+////////////////////////////////////
+// Type Conversion and Coercion
 /* //  type conversion
+
 const inputYear = '1991';
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
@@ -165,6 +185,9 @@ let n = '1' + 1; // '11'
 n = n - 1;
 console.log(n); */
 
+
+////////////////////////////////////
+// Truthy and Falsy Values
 // Five falsy values: 0, '', undefined, null, NaN
 
 /* console.log(Boolean(0));
@@ -188,6 +211,9 @@ if (height {
     console.log('Height is UNDEFINED');
 } */
 
+////////////////////////////////////
+// Equality Operators: == vs. ===
+
 /* const age = '18';
 if (age === 18) console.log('You just became an adult!(strict)');
 
@@ -210,4 +236,5 @@ else (
 
 if (favorite !== 23) console.log('Why not 23?'); */
 
-
+////////////////////////////////////
+// Logical Operators
