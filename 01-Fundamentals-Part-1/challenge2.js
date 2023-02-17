@@ -11,7 +11,7 @@ Hint: Use an if/else statement 😉 GOOD LUCK 😀
 // const jhonWeight = 85;
 // const jhonHeight = 1.76;
 
-/* const markWeight = 78;
+const markWeight = 78;
 const markHeight = 1.69;
 const jhonWeight = 92;
 const jhonHeight = 1.95;
@@ -23,6 +23,6 @@ if (markBMI > jhonBMI) {
     console.log(`Mark's BMI ${markBMI} is higher than John's! ${jhonBMI}`);
 } else {
     console.log(`John's BMI ${jhonBMI} is higher than Mark's ${markBMI}!`);
-} */
+}
 
 
