@@ -239,7 +239,7 @@ if (favorite !== 23) console.log('Why not 23?'); */
 ////////////////////////////////////
 // Logical Operators
 
-/* 
+/*
 And - && (true when ALL conditions are true)
 or - || (true when at least condition si true)
 not - ! (Invert true/false value)
@@ -266,4 +266,47 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
     console.log('Sarah is able to drive!')
 } else {
     console.log('Someone else should drive...');
+} */
+
+////////////////////////////////////
+//SWITCH statment
+
+/* const day = 'monday';
+
+switch (day) {
+    case 'monday': // day === 'monday'
+        console.log('Plan course structure');
+        console.log('Go to coding meet up');
+        break;
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code examples');
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy weekend!');
+        break
+    default:
+        console.log('Not a valid day!');
+} */
+
+/* if (day === 'monday') {
+    console.log('Plan course structure');
+    console.log('Go to coding meet up');
+} else if (day === 'tuesday') {
+    console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log('Write code examples');
+} else if (day === 'friday') {
+    console.log('Record videos');
+} else if (day === 'saturday' || day === 'sunday') {
+    console.log('Enjoy weekend!');
+} else {
+    console.log('Not a valid day!');
 } */
