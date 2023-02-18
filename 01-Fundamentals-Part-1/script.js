@@ -310,3 +310,21 @@ switch (day) {
 } else {
     console.log('Not a valid day!');
 } */
+
+////////////////////////////////////
+//STATEMENTS and EXPRESSIONS
+
+/*
+// Expression return value
+3 + 4;
+1991;
+true && false && !false;
+
+//Statement doesn't produce a value itself
+if (23 > 20) {
+    const str = '23 is bigger';
+}
+const me = 'Saulius'
+console.log(`I am  ${2037 - 1991} years old ${me}.`);
+*/
+
