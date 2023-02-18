@@ -331,7 +331,7 @@ console.log(`I am  ${2037 - 1991} years old ${me}.`);
 ////////////////////////////////////
 //THE CONDITIONAL  (TERNARY) OPERATOR
 
-/* 
+/*
 const age = 16;
 
 // age >= 18 ? console.log('I like to drink beer 🍺') : console.log('I like to drink water 💧');
@@ -348,6 +348,5 @@ if (age >= 18) {
 
 console.log(drink2);
 
-console.log(`I like to drink ${age >= 18 ? 'beer 🍺' : 'water 💧'}`); 
+console.log(`I like to drink ${age >= 18 ? 'beer 🍺' : 'water 💧'}`);
 */
-
