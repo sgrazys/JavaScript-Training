@@ -88,23 +88,23 @@ console.log(fruitProcessor(5, 10)); */
 
 // REVIEWING FUNCTIONS
 
-const calcAge = function (yearOfBirth) {
-  return 2037 - yearOfBirth;
-}
+// const calcAge = function (yearOfBirth) {
+//   return 2037 - yearOfBirth;
+// }
 
-const yearsUntilRetirement = function (birthYear, firstName) {
+// const yearsUntilRetirement = function (birthYear, firstName) {
 
-  const age = calcAge(birthYear)
-  const retirement = 65 - age;
+//   const age = calcAge(birthYear)
+//   const retirement = 65 - age;
 
-  if (retirement > 0) {
-    console.log(`${firstName} retires in ${retirement}`);
-    return retirement
-  } else {
-    console.log(`${firstName} has already retired! 🥳`);
-    return - 1
-  }
-}
+//   if (retirement > 0) {
+//     console.log(`${firstName} retires in ${retirement}`);
+//     return retirement
+//   } else {
+//     console.log(`${firstName} has already retired! 🥳`);
+//     return - 1
+//   }
+// }
 
-console.log(yearsUntilRetirement(1991, 'Marlon'));
-console.log(yearsUntilRetirement(1950, 'All'));
+// console.log(yearsUntilRetirement(1991, 'Marlon'));
+// console.log(yearsUntilRetirement(1950, 'All'));
