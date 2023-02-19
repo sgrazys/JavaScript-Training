@@ -110,46 +110,95 @@ console.log(fruitProcessor(5, 10)); */
 // console.log(yearsUntilRetirement(1950, 'All'));
 
 ////////////////////////////////////
-// ARRAYS (data structure) - INTRODUCTION 
+// ARRAYS (data structure)
 
-const actor1 = 'Marlon';
-const actor2 = 'All';
-const actor3 = 'Sandra';
+//INTRODUCTION 
+
+// const actor1 = 'Marlon';
+// const actor2 = 'All';
+// const actor3 = 'Sandra';
+
+// const colleagues = ['Marlon', 'All', 'Sandra'];
+// console.log(colleagues);
+
+// const numbers = new Array(1991, 1986, 2008, 2023);
+
+// console.log(colleagues[0]);
+// console.log(colleagues[2]);
+
+// console.log(colleagues.length);
+// console.log(colleagues[colleagues.length - 1]); //get last element from array
+
+// colleagues[2] = 'Salma'; // replace element
+// console.log(colleagues);
+
+// // colleagues = ['Russel', 'Sylvester']   - // negalima colleagues priskirti naujo listo, nes colleagues yra const.
+
+// const firstName = 'Marlon'
+// const marlon = [firstName, 'Brando', 2023 - 1924, 'actor', colleagues];
+// console.log(marlon);
+
+
+// // Exercise:
+
+// const calcAge = function (birthYear) {
+//   return 2023 - birthYear;
+// }
+
+// const years = [1997, 1976, 1981, 2002, 1995, 2004, 2018, 1986];
+
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length - 1]);
+// console.log(age1, age2, age3);
+
+// const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+
+// console.log(ages);
+
+////////////////////////////////////
+// BASIC ARRAY METHODS
+
 
 const colleagues = ['Marlon', 'All', 'Sandra'];
+
+// PUSH method. Add item to the array at end.
+colleagues.push('Salma'); // !! push method mutate original array. !!
 console.log(colleagues);
 
-const numbers = new Array(1991, 1986, 2008, 2023);
+const newLengthCollegues = colleagues.push('Russel'); // push returns length of array
+console.log(newLengthCollegues);
 
-console.log(colleagues[0]);
-console.log(colleagues[2]);
-
-console.log(colleagues.length);
-console.log(colleagues[colleagues.length - 1]); //get last element from array
-
-colleagues[2] = 'Salma'; // replace element
+// UNSHIFT method. Add item to the beginning of the array.
+colleagues.unshift('Leonardo') // unshift returns length of array
 console.log(colleagues);
 
-// colleagues = ['Russel', 'Sylvester']   - // negalima colleagues priskirti naujo listo, nes colleagues yra const.
+//POP. Remove last item in the array
+colleagues.pop();
+console.log(colleagues.pop()); // POP returns removed element
+console.log(colleagues);
 
-const firstName = 'Marlon'
-const marlon = [firstName, 'Brando', 2023 - 1924, 'actor', colleagues];
-console.log(marlon);
+// SHIFT . Removes first item in the array
+colleagues.shift();
+console.log(colleagues); // SHIFT also retuns method which was removed
 
+//INDEX OF - shows position of element in array.
+console.log(colleagues.indexOf('All'));
+console.log(colleagues.indexOf('Angelina'));
 
-// Exercise:
+colleagues.push('angelina')
+colleagues.push(17)
 
-const calcAge = function (birthYear) {
-  return 2023 - birthYear;
-}
+// INCLUDES - shows if element is in array. Return boolean true / false
+console.log(colleagues.includes('All')) // returns true
+console.log(colleagues.includes('Angelina')) // returns false and it is STRICT equality
+console.log(colleagues.includes(17)) // returns true and it is STRICT equality
 
-const years = [1997, 1976, 1981, 2002, 1995, 2004, 2018, 1986];
+// we can use INCLUDES to write conditionals
+if (colleagues.includes('Sandra')) console.log('Bullock');
 
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
-console.log(age1, age2, age3);
-
-const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
-
-console.log(ages);
+if (colleagues.includes('Morgan')) {
+  console.log('Freeman');
+} else (
+  console.log('There is no Morgan Freeman')
+)
