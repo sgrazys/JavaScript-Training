@@ -108,3 +108,48 @@ console.log(fruitProcessor(5, 10)); */
 
 // console.log(yearsUntilRetirement(1991, 'Marlon'));
 // console.log(yearsUntilRetirement(1950, 'All'));
+
+////////////////////////////////////
+// ARRAYS (data structure) - INTRODUCTION 
+
+const actor1 = 'Marlon';
+const actor2 = 'All';
+const actor3 = 'Sandra';
+
+const colleagues = ['Marlon', 'All', 'Sandra'];
+console.log(colleagues);
+
+const numbers = new Array(1991, 1986, 2008, 2023);
+
+console.log(colleagues[0]);
+console.log(colleagues[2]);
+
+console.log(colleagues.length);
+console.log(colleagues[colleagues.length - 1]); //get last element from array
+
+colleagues[2] = 'Salma'; // replace element
+console.log(colleagues);
+
+// colleagues = ['Russel', 'Sylvester']   - // negalima colleagues priskirti naujo listo, nes colleagues yra const.
+
+const firstName = 'Marlon'
+const marlon = [firstName, 'Brando', 2023 - 1924, 'actor', colleagues];
+console.log(marlon);
+
+
+// Exercise:
+
+const calcAge = function (birthYear) {
+  return 2023 - birthYear;
+}
+
+const years = [1997, 1976, 1981, 2002, 1995, 2004, 2018, 1986];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+
+console.log(ages);
