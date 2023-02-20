@@ -202,3 +202,54 @@ if (colleagues.includes('Morgan')) {
 } else (
   console.log('There is no Morgan Freeman')
 ) */
+
+////////////////////////////////////
+// OBJECTS (data structure) Introduction
+
+// const person = {
+//   firstName: 'Marlon',
+//   lastName: 'Brando',
+//   age: 2023 - 1924,
+//   job: 'actor',
+//   colleague: ['All', 'Salma', 'Angelina']
+// }
+
+// GET INFO FROM OBJ AND CHANGE PROPERTY VALUE
+
+const person = {
+  firstName: 'Marlon',
+  lastName: 'Brando',
+  age: 2023 - 1924,
+  job: 'actor',
+  colleagues: ['All', 'Salma', 'Angelina']
+}
+
+console.log(person);
+
+console.log('Last name:', person.lastName);
+console.log('First name:', person['firstName']);
+
+const nameKey = 'Name';
+console.log(person['first' + nameKey]);
+console.log(person['last' + nameKey]);
+
+// console.log(person.'last' + nameKey); // Not works
+
+const interestedIn = prompt('What do you want to know about Marlon? Choose between firstName, lastName, age, job and colleagues');
+
+if (person[interestedIn]) {
+  console.log(person[interestedIn]);
+} else {
+  console.log('Wrong request. Choose between firstName, lastName, age, job and colleagues');
+}
+
+// Change / add Object property, value
+
+person.location = 'USA';
+person['movie'] = 'Godfather';
+console.log(person);
+
+// Challenge. Dynamic sentence, no hard code of object values
+// Maroln has 3 collegues, and his best colleague  is All.
+
+console.log(`${person.firstName} has ${person.colleagues.length} colleagues, and his best collegue is ${person.colleagues[0]}.`);
