@@ -160,7 +160,7 @@ console.log(fruitProcessor(5, 10)); */
 // BASIC ARRAY METHODS
 
 
-const colleagues = ['Marlon', 'All', 'Sandra'];
+/* const colleagues = ['Marlon', 'All', 'Sandra'];
 
 // PUSH method. Add item to the array at end.
 colleagues.push('Salma'); // !! push method mutate original array. !!
@@ -201,4 +201,4 @@ if (colleagues.includes('Morgan')) {
   console.log('Freeman');
 } else (
   console.log('There is no Morgan Freeman')
-)
+) */
