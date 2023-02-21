@@ -216,40 +216,84 @@ if (colleagues.includes('Morgan')) {
 
 // GET INFO FROM OBJ AND CHANGE PROPERTY VALUE
 
+// const person = {
+//   firstName: 'Marlon',
+//   lastName: 'Brando',
+//   age: 2023 - 1924,
+//   job: 'actor',
+//   colleagues: ['All', 'Salma', 'Angelina']
+// }
+
+// console.log(person);
+
+// console.log('Last name:', person.lastName);
+// console.log('First name:', person['firstName']);
+
+// const nameKey = 'Name';
+// console.log(person['first' + nameKey]);
+// console.log(person['last' + nameKey]);
+
+// // console.log(person.'last' + nameKey); // Not works
+
+// const interestedIn = prompt('What do you want to know about Marlon? Choose between firstName, lastName, age, job and colleagues');
+
+// if (person[interestedIn]) {
+//   console.log(person[interestedIn]);
+// } else {
+//   console.log('Wrong request. Choose between firstName, lastName, age, job and colleagues');
+// }
+
+// // Change / add Object property, value
+
+// person.location = 'USA';
+// person['movie'] = 'Godfather';
+// console.log(person);
+
+// // Challenge. Dynamic sentence, no hard code of object values
+// // Maroln has 3 collegues, and his best colleague  is All.
+
+// console.log(`${person.firstName} has ${person.colleagues.length} colleagues, and his best collegue is ${person.colleagues[0]}.`);
+
+////////////////////////////////////
+// OBJECTS built-in METHODS
+
 const person = {
-  firstName: 'Marlon',
-  lastName: 'Brando',
-  age: 2023 - 1924,
+  firstName: 'Russell',
+  lastName: 'Crowe',
+  birthYear: 1964,
+  currentYear: new Date().getFullYear(),
   job: 'actor',
-  colleagues: ['All', 'Salma', 'Angelina']
+  colleagues: ['All', 'Salma', 'Angelina'],
+  hasOscar: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2023 - birthYear;
+  // }
+
+  // calcAge: function () {
+  //   return this.currentYear - this.birthYear
+
+  calcAge: function () {
+    this.age = this.currentYear - this.birthYear;
+    return this.age;
+  },
+
+  getBio: function () {
+    return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasOscar ? 'Oscar' : 'no Oscars'}.`;
+  }
+
 }
+
+console.log(person.calcAge());
+
+console.log(person.age);
+console.log(person.age);
+console.log(person.age);
 
 console.log(person);
 
-console.log('Last name:', person.lastName);
-console.log('First name:', person['firstName']);
+//Challenge
+// 'Russell is a 59-year old actor, and he has Oscar'
 
-const nameKey = 'Name';
-console.log(person['first' + nameKey]);
-console.log(person['last' + nameKey]);
+console.log(person.getBio());
 
-// console.log(person.'last' + nameKey); // Not works
-
-const interestedIn = prompt('What do you want to know about Marlon? Choose between firstName, lastName, age, job and colleagues');
-
-if (person[interestedIn]) {
-  console.log(person[interestedIn]);
-} else {
-  console.log('Wrong request. Choose between firstName, lastName, age, job and colleagues');
-}
-
-// Change / add Object property, value
-
-person.location = 'USA';
-person['movie'] = 'Godfather';
-console.log(person);
-
-// Challenge. Dynamic sentence, no hard code of object values
-// Maroln has 3 collegues, and his best colleague  is All.
-
-console.log(`${person.firstName} has ${person.colleagues.length} colleagues, and his best collegue is ${person.colleagues[0]}.`);
