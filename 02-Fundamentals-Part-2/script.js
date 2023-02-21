@@ -257,43 +257,43 @@ if (colleagues.includes('Morgan')) {
 ////////////////////////////////////
 // OBJECTS built-in METHODS
 
-const person = {
-  firstName: 'Russell',
-  lastName: 'Crowe',
-  birthYear: 1964,
-  currentYear: new Date().getFullYear(),
-  job: 'actor',
-  colleagues: ['All', 'Salma', 'Angelina'],
-  hasOscar: true,
+// const person = {
+//   firstName: 'Russell',
+//   lastName: 'Crowe',
+//   birthYear: 1964,
+//   currentYear: new Date().getFullYear(),
+//   job: 'actor',
+//   colleagues: ['All', 'Salma', 'Angelina'],
+//   hasOscar: true,
 
-  // calcAge: function (birthYear) {
-  //   return 2023 - birthYear;
-  // }
+//   // calcAge: function (birthYear) {
+//   //   return 2023 - birthYear;
+//   // }
 
-  // calcAge: function () {
-  //   return this.currentYear - this.birthYear
+//   // calcAge: function () {
+//   //   return this.currentYear - this.birthYear
 
-  calcAge: function () {
-    this.age = this.currentYear - this.birthYear;
-    return this.age;
-  },
+//   calcAge: function () {
+//     this.age = this.currentYear - this.birthYear;
+//     return this.age;
+//   },
 
-  getBio: function () {
-    return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasOscar ? 'Oscar' : 'no Oscars'}.`;
-  }
+//   getBio: function () {
+//     return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasOscar ? 'Oscar' : 'no Oscars'}.`;
+//   }
 
-}
+// }
 
-console.log(person.calcAge());
+// console.log(person.calcAge());
 
-console.log(person.age);
-console.log(person.age);
-console.log(person.age);
+// console.log(person.age);
+// console.log(person.age);
+// console.log(person.age);
 
-console.log(person);
+// console.log(person);
 
-//Challenge
-// 'Russell is a 59-year old actor, and he has Oscar'
+// //Challenge
+// // 'Russell is a 59-year old actor, and he has Oscar'
 
-console.log(person.getBio());
+// console.log(person.getBio());
 
