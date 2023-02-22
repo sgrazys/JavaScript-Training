@@ -372,28 +372,52 @@ if (colleagues.includes('Morgan')) {
 
 //LOOPING BACKWARDS AND LOOPS IN LOOPS
 
-const personArray = [
-  'Russell',
-  'Crowe',
-  2023 - 1964,
-  'actor',
-  ['All', 'Sandra', 'Joaquin'],
-  true
-];
+// const personArray = [
+//   'Russell',
+//   'Crowe',
+//   2023 - 1964,
+//   'actor',
+//   ['All', 'Sandra', 'Joaquin'],
+//   true
+// ];
 
 
-//LOOP in BACKWARDS
-for (let i = personArray.length - 1; i >= 0; i--) {
-  console.log(i, personArray[i]);
+// //LOOP in BACKWARDS
+// for (let i = personArray.length - 1; i >= 0; i--) {
+//   console.log(i, personArray[i]);
+// }
+
+// // LOOP inside LOOP
+// // GYM example. we have 3 exercises and want log five for each exercises.
+
+// for (let exercise = 1; exercise <= 3; exercise++) {
+//   console.log(`-----STARTING EXERCISE ${exercise}`);
+
+//   for (let rep = 1; rep <= 5; rep++) {
+//     console.log(`Exercise ${exercise}: Lifting weigth repetition ${rep} 🏋️`);
+//   }
+// };
+
+////////////////////////////////////
+// ITERATION: THE WHILE LOOP
+
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`Lifting weights repetition ${i} 🏋️`);
+// };
+
+// WHILE LOOP
+
+let i = 1;
+while (i <= 10) {
+  // console.log(`WHILE: Lifting weights repetition ${i} 🏋️`);
+  i++
 }
 
-// LOOP inside LOOP
-// GYM example. we have 3 exercises and want log five for each exercises.
+let dice = Math.trunc(Math.random() * 6) + 1;
 
-for (let exercise = 1; exercise <= 3; exercise++) {
-  console.log(`-----STARTING EXERCISE ${exercise}`);
-
-  for (let rep = 1; rep <= 5; rep++) {
-    console.log(`Exercise ${exercise}: Lifting weigth repetition ${rep} 🏋️`);
-  }
-};
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log(`Loop is about to end... You rolled ${dice}`);
+}
