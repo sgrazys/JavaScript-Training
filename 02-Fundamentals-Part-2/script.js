@@ -311,7 +311,61 @@ if (colleagues.includes('Morgan')) {
 // console.log('Lifting weights repetition 9 🏋️');
 // console.log('Lifting weights repetition 10 🏋️');
 
-// for loop keeps running while condition is TRUE
-for (let i = 1; i <= 30; i++) {
-  console.log(`Lifting weights repetition ${i} 🏋️`);
+// // for loop keeps running while condition is TRUE
+// for (let i = 1; i <= 30; i++) {
+//   console.log(`Lifting weights repetition ${i} 🏋️`);
+// }
+
+``
+// LOOPING ARRAYS, BREAKING AND CONTINUING
+
+const personArray = [
+  'Russell',
+  'Crowe',
+  2023 - 1964,
+  'actor',
+  ['All', 'Sandra', 'Joaquin'],
+  true,
+  1
+];
+
+const types = [];
+
+for (let i = 0; i < personArray.length; i++) {
+  // Reading  values from array
+  console.log(personArray[i], typeof personArray[i]);
+
+  // Filling types array
+  // types[i] = typeof personArray[i]
+  types.push(typeof personArray[i])
+
+}
+
+console.log(types);
+
+const years = [1981, 2007, 1964, 2018];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2023 - years[i]);
+}
+console.log(ages);
+
+// CONTINUE and BREAK Statements in the FOR loop
+
+// continue - exit from current iteration loop and continue to another.
+// break totally 'kill' loop.
+
+// we want loop only through strings in array 
+console.log('---Only strings---');
+for (let i = 0; i < personArray.length; i++) {
+  if (typeof personArray[i] !== 'string') continue
+  console.log(personArray[i], typeof personArray[i]);
+}
+
+// log no other elements after found number
+console.log('---Break with number---');
+for (let i = 0; i < personArray.length; i++) {
+  if (typeof personArray[i] === 'number') break
+  console.log(personArray[i], typeof personArray[i]);
 }
