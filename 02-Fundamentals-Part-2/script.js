@@ -316,8 +316,61 @@ if (colleagues.includes('Morgan')) {
 //   console.log(`Lifting weights repetition ${i} 🏋️`);
 // }
 
-``
+
 // LOOPING ARRAYS, BREAKING AND CONTINUING
+
+// const personArray = [
+//   'Russell',
+//   'Crowe',
+//   2023 - 1964,
+//   'actor',
+//   ['All', 'Sandra', 'Joaquin'],
+//   true,
+//   1
+// ];
+
+// const types = [];
+
+// for (let i = 0; i < personArray.length; i++) {
+//   // Reading  values from array
+//   console.log(personArray[i], typeof personArray[i]);
+
+//   // Filling types array
+//   // types[i] = typeof personArray[i]
+//   types.push(typeof personArray[i])
+
+// }
+
+// console.log(types);
+
+// const years = [1981, 2007, 1964, 2018];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2023 - years[i]);
+// }
+// console.log(ages);
+
+// // CONTINUE and BREAK Statements in the FOR loop
+
+// // continue - exit from current iteration loop and continue to another.
+// // break totally 'kill' loop.
+
+// // we want loop only through strings in array 
+// console.log('---Only strings---');
+// for (let i = 0; i < personArray.length; i++) {
+//   if (typeof personArray[i] !== 'string') continue
+//   console.log(personArray[i], typeof personArray[i]);
+// }
+
+// // log no other elements after found number
+// console.log('---Break with number---');
+// for (let i = 0; i < personArray.length; i++) {
+//   if (typeof personArray[i] === 'number') break
+//   console.log(personArray[i], typeof personArray[i]);
+// }
+
+//LOOPING BACKWARDS AND LOOPS IN LOOPS
 
 const personArray = [
   'Russell',
@@ -325,47 +378,22 @@ const personArray = [
   2023 - 1964,
   'actor',
   ['All', 'Sandra', 'Joaquin'],
-  true,
-  1
+  true
 ];
 
-const types = [];
 
-for (let i = 0; i < personArray.length; i++) {
-  // Reading  values from array
-  console.log(personArray[i], typeof personArray[i]);
-
-  // Filling types array
-  // types[i] = typeof personArray[i]
-  types.push(typeof personArray[i])
-
+//LOOP in BACKWARDS
+for (let i = personArray.length - 1; i >= 0; i--) {
+  console.log(i, personArray[i]);
 }
 
-console.log(types);
+// LOOP inside LOOP
+// GYM example. we have 3 exercises and want log five for each exercises.
 
-const years = [1981, 2007, 1964, 2018];
-const ages = [];
+for (let exercise = 1; exercise <= 3; exercise++) {
+  console.log(`-----STARTING EXERCISE ${exercise}`);
 
-for (let i = 0; i < years.length; i++) {
-  ages.push(2023 - years[i]);
-}
-console.log(ages);
-
-// CONTINUE and BREAK Statements in the FOR loop
-
-// continue - exit from current iteration loop and continue to another.
-// break totally 'kill' loop.
-
-// we want loop only through strings in array 
-console.log('---Only strings---');
-for (let i = 0; i < personArray.length; i++) {
-  if (typeof personArray[i] !== 'string') continue
-  console.log(personArray[i], typeof personArray[i]);
-}
-
-// log no other elements after found number
-console.log('---Break with number---');
-for (let i = 0; i < personArray.length; i++) {
-  if (typeof personArray[i] === 'number') break
-  console.log(personArray[i], typeof personArray[i]);
-}
+  for (let rep = 1; rep <= 5; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weigth repetition ${rep} 🏋️`);
+  }
+};
